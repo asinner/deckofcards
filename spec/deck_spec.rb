@@ -2,12 +2,12 @@ require 'spec_helper'
 require 'deck'
 
 describe Deck do
-  it "should have 52 cards" do
+  it 'should have 52 cards' do
     d = Deck.new
     assert_equal(d.cards.count, 52)
   end
-  
-  it "should always be shuffled" do
+
+  it 'should always be shuffled' do
     d1 = Deck.new
     d2 = Deck.new
     d3 = Deck.new
